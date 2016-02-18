@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/publication_item"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/column1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/staggered_grid"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:scrollbars="none"
+            android:padding="@dimen/pub_item_widget_padding"
+            android:layout_alignParentTop="true"
+            android:nestedScrollingEnabled="false"
+            android:fadingEdge="none" />
+
+        <com.baoshi.mua.view.CircleImageView xmlns:civ="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_head"
+            android:layout_width="@dimen/login_user_head_size"
+            android:layout_height="@dimen/login_user_head_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/pub_item_user_head_margin_top"
+            android:layout_below="@id/staggered_grid"
+            android:layout_alignWithParentIfMissing="true"
+            android:src="@drawable/ic_head_nophoto"
+            civ:border_width="1dp"
+            civ:border_color="@color/gray_deep_50" />
+
+        <TextView
+            android:id="@+id/caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/user_head"
+            android:layout_alignTop="@id/user_head"
+            android:padding="@dimen/pub_item_widget_padding"
+            android:maxLines="3"
+            style="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:layout_marginTop="@dimen/login_button_padding"
+            android:paddingLeft="0dp"
+            android:paddingTop="@dimen/login_button_padding"
+            android:paddingRight="@dimen/login_button_padding"
+            android:paddingBottom="@dimen/login_button_padding"
+            android:drawableLeft="@drawable/ic_pin_drop_grey600_24dp"
+            android:layout_below="@id/user_head"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:id="@+id/follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/login_button_padding"
+            android:layout_marginRight="@dimen/pub_item_follow_icon_margin_right"
+            android:src="@drawable/icon_follow_selector"
+            android:layout_alignBottom="@id/location"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/column2"
+        android:orientation="vertical"
+        android:layout_width="@dimen/pub_item_time_axis_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/timeaxis_time"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            style="@style/Base.TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/timeaxis_date"
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            style="@style/Base.TextAppearance.AppCompat.Caption" />
+        <!-- click to slide out a tool bar from right which contain praise, comment and more button. -->
+        <ImageView
+            android:id="@+id/comment_shrink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/login_button_padding"
+            android:src="@drawable/ic_reply_all_grey600_24dp"
+            android:layout_gravity="bottom|center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

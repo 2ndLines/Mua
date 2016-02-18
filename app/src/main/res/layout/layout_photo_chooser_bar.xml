@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <com.baoshi.mua.view.CheckableImageView
+        android:id="@+id/toggle"
+        android:layout_width="@dimen/abc_action_button_min_width_material"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
+        android:src="@drawable/toggle_selector"
+        android:scaleType="center"
+        android:tint="@color/material_deep_teal_200"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:enabled="false"
+        android:visibility="gone"
+        android:onClick="onPreviewClick"
+        style="@style/DefaultButton"
+        android:text="@string/preview" />
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:minWidth="@dimen/button_default_min_width"
+        android:onClick="onDoneClick"
+        style="@style/DefaultButton.Light"
+        android:text="@string/button_done" />
+</RelativeLayout>

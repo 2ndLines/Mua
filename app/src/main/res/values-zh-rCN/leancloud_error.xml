@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phone_number_has_token">手机号码已经被注册</string> <!--214-->
+    <string name="phone_number_is_not_verified">手机号码未验证</string> <!-- 215 -->
+    <string name="phone_is_not_regesitered">该手机号码未注册</string> <!--213-->
+    <string name="phone_pwd_dismatch" >手机号码和密码不匹配</string> <!--210-->
+    <string name="phone_number_is_invalid">手机号码无效</string> <!--127-->
+</resources>

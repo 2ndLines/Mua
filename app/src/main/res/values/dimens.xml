@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_default_min_width">88dp</dimen>
+    <dimen name="button_default_min_height">48dp</dimen>
+    <dimen name="button_default_text_size">18sp</dimen>
+    <dimen name="thumbnail_size">96dp</dimen>
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_shadow_size">8dp</dimen>
+    <dimen name="fab_mini_shadow_size">6dp</dimen>
+
+    <dimen name="fab_scroll_threshold">4dp</dimen>
+    <dimen name="fab_elevation_lollipop">8dp</dimen>
+    <dimen name="six_image_item_margin">2dp</dimen>
+    <dimen name="viewpager_margin">20dp</dimen>
+    <dimen name="pub_compose_widget_margin_top">24dp</dimen>
+    <dimen name="pub_compose_fab_margin_top">36dp</dimen>
+    <dimen name="pub_compose_caption_text_height">200dp</dimen>
+    <dimen name="pub_compose_widget_padding">2dp</dimen>
+    <dimen name="quick_return_header_height">180dp</dimen>
+    <dimen name="login_user_head_margin_top">48dp</dimen>
+    <dimen name="login_edit_text_width">160dp</dimen>
+    <dimen name="login_widget_margin_top">18dp</dimen>
+    <dimen name="login_widget_margin_left">10dp</dimen>
+    <dimen name="login_button_padding">5dp</dimen>
+    <dimen name="login_username_input_margin_top">20dp</dimen>
+    <dimen name="login_forget_button_margin_top">20dp</dimen>
+    <dimen name="login_edit_text_height">48dp</dimen>
+    <dimen name="login_user_head_size">56dp</dimen>
+    <dimen name="pub_item_time_axis_width">56dp</dimen>
+    <dimen name="pub_item_user_head_margin_top">10dp</dimen>
+    <dimen name="pub_item_widget_padding">2dp</dimen>
+    <dimen name="detail_tab_height">36dp</dimen>
+    <dimen name="pub_item_follow_icon_margin_right">10dp</dimen>
+    <!--<dimen name="login_forget_button_margin_top">36dp</dimen>-->
+</resources>

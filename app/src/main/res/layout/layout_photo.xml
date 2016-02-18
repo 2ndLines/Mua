@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:layout_gravity="center" />
+
+    <com.baoshi.mua.view.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        ProgressWheel:barColor="#339BB9"
+        ProgressWheel:barWidth="4dp"
+        ProgressWheel:rimColor="#44000000"
+        ProgressWheel:rimWidth="4dp"
+        ProgressWheel:spinSpeed="3dp"
+        ProgressWheel:textColor="#222222"
+        ProgressWheel:textSize="14sp" />
+
+</FrameLayout>

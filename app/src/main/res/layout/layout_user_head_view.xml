@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.baoshi.mua.view.CircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:civ="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_head"
+    android:layout_width="@dimen/login_user_head_size"
+    android:layout_height="@dimen/login_user_head_size"
+    android:src="@drawable/ic_head_nophoto"
+    civ:border_width="1dp"
+    civ:border_color="@color/gray_deep_50" />

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--setup phone-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="@dimen/login_edit_text_width"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/login_username_input_margin_top"
+                android:hint="@string/text_phone"
+                android:inputType="phone"
+                android:maxLength="@integer/login_edit_text_max_length"
+                android:singleLine="true"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_android_grey600_24dp"
+                android:layout_toLeftOf="@id/input_phone"
+                android:layout_alignBottom="@id/input_phone"
+                android:padding="2dp" />
+        </RelativeLayout>
+
+        <!--Verify sms code-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/smscode_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="16sp"
+                android:text="@string/input_smscode_tips" />
+
+            <EditText
+                android:id="@+id/sms_code"
+                android:layout_width="@dimen/login_edit_text_width"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:layout_below="@id/smscode_hint"
+                android:layout_marginTop="@dimen/login_widget_margin_top"
+                android:hint="@string/text_smscode"
+                android:inputType="number"
+                android:maxLength="@integer/login_edit_text_max_length"
+                android:singleLine="true"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_verified_user_grey600_24dp"
+                android:layout_toLeftOf="@id/sms_code"
+                android:layout_alignBottom="@id/sms_code"
+                android:padding="2dp" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/login_button_padding"
+        android:weightSum="10"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/button_previous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/text_previous"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/text_next" />
+
+    </LinearLayout>
+</RelativeLayout>

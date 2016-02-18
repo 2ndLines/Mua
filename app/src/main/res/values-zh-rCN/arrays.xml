@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pub_type_array">
+        <item>答谢感恩</item>
+        <item>爆料揭发</item>
+        <item>寻求帮助</item>
+        <item>广而告之</item>
+        <!--<item>自定义...</item>-->
+    </string-array>
+    <string name="customize" >自定义&#8230;</string>
+
+    <string-array name="forget_action_list">
+        <item>重置密码</item>
+        <item>使用短信验证码登陆</item>
+    </string-array>
+
+    <string-array name="mine_vertical_navi_item_list">
+        <item>我的发布</item>
+        <item>我的关注</item>
+        <item>我的收藏</item>
+        <item>设置</item>
+    </string-array>
+
+</resources>

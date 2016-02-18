@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+
+    </style>
+
+    <style name="AppTheme.MaterialActionBar" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/MaterialActionBar</item>
+    </style>
+
+    <style name="MaterialActionBar" parent="Base.Widget.AppCompat.ActionBar" >
+        <item name="android:background">@color/material_deep_teal_500</item>
+    </style>
+
+</resources>

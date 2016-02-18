@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/signup_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nickname -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/setup_nickname"
+                android:layout_width="@dimen/login_edit_text_width"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/login_username_input_margin_top"
+                android:hint="@string/setup_nickname"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_box_grey600_24dp"
+                android:layout_toLeftOf="@id/setup_nickname"
+                android:layout_alignBottom="@id/setup_nickname"
+                android:padding="2dp" />
+        </RelativeLayout>
+
+        <!--Password-->
+        <include layout="@layout/layout_password_repeat" />
+
+        <!--setup phone-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/setup_phone"
+                android:layout_width="@dimen/login_edit_text_width"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/login_username_input_margin_top"
+                android:hint="@string/text_phone"
+                android:inputType="phone"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_android_grey600_24dp"
+                android:layout_toLeftOf="@id/setup_phone"
+                android:layout_alignBottom="@id/setup_phone"
+                android:padding="2dp" />
+        </RelativeLayout>
+
+        <!--Verify sms code-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/smscode_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="16sp"
+                android:text="@string/input_smscode_tips"/>
+            <EditText
+                android:id="@+id/sms_code"
+                android:layout_width="@dimen/login_edit_text_width"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:layout_below="@id/smscode_hint"
+                android:layout_marginTop="@dimen/login_widget_margin_top"
+                android:hint="@string/text_smscode"
+                android:inputType="number"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_verified_user_grey600_24dp"
+                android:layout_toLeftOf="@id/sms_code"
+                android:layout_alignBottom="@id/sms_code"
+                android:padding="2dp" />
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/login_button_padding"
+        android:weightSum="10"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/btn_previous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/text_previous"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+		
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="5"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="@string/text_next" />
+    </LinearLayout>
+
+</RelativeLayout>

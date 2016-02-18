@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mine_photo"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:background="@color/gainsboro"
+        android:layout_height="200dp" />
+
+    <com.baoshi.mua.view.CircleImageView
+        android:id="@+id/user_head"
+        android:layout_width="@dimen/login_user_head_size"
+        android:layout_height="@dimen/login_user_head_size"
+        android:src="@drawable/ic_head_nophoto"
+        android:layout_margin="@dimen/login_button_padding"
+        android:layout_alignLeft="@id/mine_photo"
+        android:layout_alignBottom="@id/mine_photo" />
+
+    <TextView
+        android:id="@+id/user_signature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/user_head"
+        android:padding="2dp"
+        android:layout_alignBottom="@id/mine_photo" />
+
+    <TextView
+        android:id="@+id/user_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+        android:layout_toRightOf="@id/user_head"
+        android:layout_above="@id/user_signature_text"
+        android:layout_alignLeft="@id/user_signature_text" />
+
+    <LinearLayout
+        android:id="@+id/hori_navi_items"
+        android:orientation="horizontal"
+        android:layout_below="@id/mine_photo"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/navi_item_nearby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/hori_navi_item_nearby"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@drawable/default_list_selector"
+            android:drawableTop="@drawable/ic_nearby_grey600_48dp" />
+
+        <TextView
+            android:id="@+id/navi_item_friends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/hori_navi_item_friends"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@drawable/default_list_selector"
+            android:drawableTop="@drawable/ic_group_grey600_48dp" />
+
+        <TextView
+            android:id="@+id/navi_item_aboutme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/hori_navi_item_aboutme"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@drawable/default_list_selector"
+            android:drawableTop="@drawable/ic_comment_grey600_48dp" />
+    </LinearLayout>
+</RelativeLayout>

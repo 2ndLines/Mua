@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_pressed</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.MaterialActionBar">
+        <item name="actionBarStyle">@style/MaterialActionBar</item>
+    </style>
+
+    <style name="MaterialActionBar" parent="Base.Widget.AppCompat.ActionBar" >
+        <item name="background">@color/material_deep_teal_500</item>
+    </style>
+
+    <style name="DefaultButton" >
+        <item name="android:background">@drawable/button_default_selector</item>
+        <item name="android:minWidth">@dimen/button_default_min_width</item>
+        <item name="android:minHeight">@dimen/button_default_min_height</item>
+        <item name="android:textSize">@dimen/button_default_text_size</item>
+        <item name="android:textColor">@color/default_button_text_color</item>
+    </style>
+
+    <style name="DefaultButton.Light" >
+        <item name="android:background">@drawable/button_default_light_selector</item>
+    </style>
+
+    <style name="popup_scale_anim" >
+        <item name="android:windowEnterAnimation" >@anim/scale_up_enter_from_left_top</item>
+        <item name="android:windowExitAnimation" >@anim/scale_down_exit_to_left_top</item>
+
+    </style>
+
+    <style name="popup_translate_anim" >
+        <item name="android:windowEnterAnimation" >@anim/popup</item>
+        <item name="android:windowExitAnimation" >@anim/falldown</item>
+    </style>
+</resources>
